@@ -1,0 +1,72 @@
+/* Accessible color overrides (all text/background pairs meet WCAG AA 4.5:1) */
+
+/* Header: dark Intel blue so the white logo and white text are readable
+   (white on #0068b5 = 5.8:1, white on #003d75 = 10.9:1) */
+.site-header {
+  background: linear-gradient(135deg, #0068b5 0%, #003d75 100%);
+  color: #fff;
+}
+
+/* Buttons: Intel blue instead of Bootstrap's default blue (which is only 4.5:1) */
+.btn-primary {
+  --bs-btn-bg: #0068b5;
+  --bs-btn-border-color: #0068b5;
+  --bs-btn-hover-bg: #00539b;
+  --bs-btn-hover-border-color: #00539b;
+  --bs-btn-active-bg: #003d75;
+  --bs-btn-active-border-color: #003d75;
+  --bs-btn-disabled-bg: #0068b5;
+  --bs-btn-disabled-border-color: #0068b5;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #0068b5;
+  --bs-btn-border-color: #0068b5;
+  --bs-btn-hover-bg: #0068b5;
+  --bs-btn-hover-border-color: #0068b5;
+  --bs-btn-active-bg: #00539b;
+  --bs-btn-active-border-color: #00539b;
+}
+
+/* Form field: darker border so the input outline is visible (4.7:1 on white) */
+.form-control {
+  border-color: #6c757d;
+}
+
+.form-control:focus {
+  border-color: #0068b5;
+  box-shadow: 0 0 0 0.25rem rgba(0, 104, 181, 0.35);
+}
+
+/* Broken-image fallback: keep alt text readable if an image fails to load */
+img {
+  max-width: 100%;
+  color: #212529;
+  font-style: italic;
+}
+
+.site-header img {
+  color: #fff;
+}
+
+/* Highlights carousel: white text on dark Intel blue (10.9:1) */
+.highlights-carousel {
+  background-color: #003d75;
+  color: #fff;
+}
+
+.highlight-slide {
+  min-height: 320px;
+  padding: 3rem 4.5rem 4rem; /* leave room for the arrows and indicators */
+}
+
+.highlight-slide p:last-child {
+  max-width: 600px;
+}
+
+@media (max-width: 575.98px) {
+  .highlight-slide {
+    min-height: 380px;
+    padding: 2rem 3rem 3.5rem;
+  }
+}
