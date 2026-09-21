@@ -70,3 +70,18 @@ img {
     padding: 2rem 3rem 3.5rem;
   }
 }
+
+/* Timeline cards: 3-column grid on large screens (2 on tablets, 1 on phones) */
+.timeline-card {
+  padding: 1.5rem;
+  border: 1px solid #6c757d;
+  border-radius: 0.5rem;
+  background-color: #fff;
+}
+
+.timeline-card img {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+}
