@@ -71,7 +71,7 @@ img {
   }
 }
 
-/* Timeline cards: 3-column grid on large screens (2 on tablets, 1 on phones) */
+/* Timeline cards: 3-column grid, collapsing to 1 column on phones / narrow windows */
 .timeline-card {
   padding: 1.5rem;
   border: 1px solid #6c757d;
